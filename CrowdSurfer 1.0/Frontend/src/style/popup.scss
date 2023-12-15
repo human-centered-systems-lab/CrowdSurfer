@@ -1,0 +1,197 @@
+@import "lib/bootstrap.min.css";
+@import "lib/bootstrap_custom.min.css";
+@import "lib/components.min.css";
+@import "lib/icons.min.css";
+
+
+#chrome-surfer {
+
+  #new-task {
+    background-color: #e8f5e9;
+    border-top: 1px solid #2e7c33;
+    border-bottom: 1px solid #2e7c33;
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  #bodyContent{
+    display: none;
+  }
+
+  .lds-dual-ring {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-left: 33%;
+  }
+
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 51.2px;
+    height: 51.2px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #d3d3d3 transparent #d3d3d3 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+
+  .list-group-item-action {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #no-activities {
+    display: none;
+  }
+
+  #activities {
+    display: none;
+  }
+
+  .media-body.active {
+    margin-left: 50px;
+    margin-top: -45px;
+  }
+
+  .media-body.inactive {
+    margin-left: 50px;
+    margin-top: -30px !important;
+    margin-bottom: 10px;
+  }
+
+  .login-form {
+    width: 300px !important;
+    margin-bottom: 0px;
+  }
+
+  .home-view {
+    width: 300px !important;
+  }
+
+  .card {
+    margin-bottom: 0px !important;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #f27d52, #4992f2) 1;
+  }
+
+  .content {
+    padding: 0px !important;
+  }
+
+  .d-flex {
+    display: block !important;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #4caf50;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4caf50;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 17px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  label.switch {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .form-check-label {
+    font-weight: 500;
+  }
+
+  .ml-auto {
+    color: white;
+  }
+
+  .text-danger {
+    display: none;
+  }
+
+  .card-title {
+    width: 80%;
+    font-size: 15px;
+  }
+
+  #name {
+    margin-top: -9%;
+  }
+
+  #logoff {
+    cursor: pointer;
+    margin-bottom: -20px
+  }
+  #help{
+    cursor: pointer;
+    margin-right: 30px;
+  }
+}

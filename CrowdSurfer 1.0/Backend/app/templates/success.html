@@ -1,0 +1,59 @@
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='/css/icomoon.min.css', mimetype='text/css') }}"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css', mimetype='text/css') }}"/>
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='/css/bootstrap_limitless.min.css', mimetype='text/css') }}"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/components.min.css', mimetype='text/css') }}"/>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<!-- /global stylesheets -->
+
+<!-- Core JS files -->
+<script src="{{ url_for('static', filename='/js/jquery.min.js') }}" type="text/javascript"></script>
+
+
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script src="{{ url_for('static', filename='/js/spectrum.js') }}"
+        type="text/javascript"></script>
+
+<script src="{{ url_for('static', filename='/js/picker_color.js') }}"
+        type="text/javascript"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/main.css', mimetype='text/css') }}"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CrowdSurfer</title>
+</head>
+<body>
+<div class="container-success">
+    <div class="object">
+        <img src="{{ url_for('static', filename='img/logo-128.png') }}" alt=""
+             class="object__img">
+        <div class="object__intro">
+        </div>
+    </div>
+
+    <div class="arrow">
+        <div class="arrow__body"></div>
+    </div>
+</div>
+<div class="success-items">
+    <div class="card border-1 border-primary info-success">
+        <div class="card-body" style="padding: 15px; text-align: center;">
+            <h5>CrowdSurfer is now searching for tasks for you while you browse the internet.</h5>
+            If you complete these tasks,
+            you will receive monetary compensation, which will be paid to you via Prolific. You can track your progress
+            in the top right corner. Now, have fun and enjoy your day while earning money!
+            <br> <br>
+            <strong> Please enter this Code in LimeSurvey to finish the CrowdSurfer set-up task: H8DF07 </strong>
+            <br> <br>
+            You can close this page now.
+        </div>
+    </div>
+</div>
+</body>
+</html>

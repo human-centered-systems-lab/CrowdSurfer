@@ -1,0 +1,54 @@
+<div class="feedback-panel">
+    <span id="badge-crowdsurfer" class="badge bg-pink-400 rounded-circle badge-icone">
+        <i class="icon-bell3"></i>
+    </span>
+    <div class="dropdown-menu dropdown-menu-right" id="dropdownTextStar">
+        <a class="dropdown-item" id="remind"><i class="icon-alarm"></i> Remind me in 1 day</a>
+        <div class="dropdown-divider"></div>
+        <a id="moreInfo" class="dropdown-item"><i class="icon-info3"></i> More Information</a>
+    </div>
+    <div class="card">
+        <div class="success-checkmark" id="rewriteSuccess">
+            <div class="text-muted openTasks" id="openTasks"></div>
+            <div class="success-check-icon">
+                <span class="success-icon-line line-tip"></span>
+                <span class="success-icon-line line-long"></span>
+                <div class="success-icon-circle"></div>
+                <div class="success-icon-fix-"></div>
+            </div>
+        </div>
+        <div class="panelArea" id="panelArea">
+            <div class="text-right" style="margin-right: 10px; margin-top: 5px">
+                <div class="list-icons">
+                    <a id="toggleTextStar"
+                       class="list-icons-item dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                            class="icon-menu7"></i></a>
+                    <a class="list-icons-item" data-action="collapse" id="minimizeTextStar"></a>
+                    <a class="list-icons-item" data-action="remove" id="removeTextStar"></a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="rating">
+                    <input type="radio" name="rating" id="rating-5">
+                    <label id="label5" for="rating-5"></label>
+                    <input type="radio" name="rating" id="rating-4">
+                    <label id="label4" for="rating-4"></label>
+                    <input type="radio" name="rating" id="rating-3">
+                    <label id="label3" for="rating-3"></label>
+                    <input type="radio" name="rating" id="rating-2">
+                    <label id="label2" for="rating-2"></label>
+                    <input type="radio" name="rating" id="rating-1">
+                    <label id="label1" for="rating-1"></label>
+                </div>
+                <textarea id="textCrowdSurfer" rows="3" cols="3" class="form-control"
+                          placeholder="What do you Think about this Element?"
+                          style="height: 90px; width: 200px;"></textarea>
+                <span id="danger-text-stars" class="form-text text-danger" style="font-size: 10px;">Please provide Star or Text Feedback </span>
+                <div class="text-right" style="margin-top: 10px">
+                    <button id="textStarSubmit" type="submit" class="btn btn-primary legitRipple">Submit <i
+                            class="icon-paperplane ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

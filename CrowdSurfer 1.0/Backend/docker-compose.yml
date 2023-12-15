@@ -1,0 +1,31 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    volumes:
+      - .:/app
+    depends_on:
+      - mongo
+    env_file:
+      - .env
+    networks:
+      - myapp_network
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONIOENCODING=UTF-8
+  mongo:
+    restart: always
+    image: mongo
+    ports:
+      - '27019:27019'
+    volumes:
+      - ./data/db:/data/db
+    networks:
+      - myapp_network
+networks:
+  myapp_network:
+    driver: bridge

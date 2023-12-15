@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Linked list group -->
+<div id="chrome-surfer">
+    <div class="home-view">
+        <div class="card">
+            <div class="card-body">
+                <div class="text-right" id="logoff">
+                    <i class="icon-exit"></i>
+                </div>
+                <div class="text-right" id="help">
+                    <i class="icon-help"></i>
+                </div>
+                <h5 class="card-title" id="name">Your ID:
+                </h5>
+                <label class="form-check-label">
+                    <label class="switch">
+                        <input id="checkForTasks" type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    Search for Tasks
+                </label>
+                <div>
+                    <span class="form-text text-danger">
+                    <i class="icon-alert mr-2"></i>
+                        The search for tasks is not active
+                    </span>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush border-top">
+                <li class="media">
+                    <div class="lds-dual-ring"></div>
+                </li>
+                <div id="bodyContent">
+                        <a class="list-group-item list-group-item-action">
+                <span class="font-weight-semibold">
+                    <i class="icon-file-check mr-2"></i>
+                    Tasks completed today
+                </span>
+                            <span class="badge bg-success ml-auto" id="task-today">0</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action">
+                <span class="font-weight-semibold" id="month">
+                    <i class="icon-checkmark-circle mr-2"></i>
+                    Tasks completed
+                </span>
+                            <span class="badge bg-success ml-auto" id="task-month">0</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action">
+                <span class="font-weight-semibold" id="domain" style="margin-left: 30px;">
+                    <i class="icon-list mr-2" style="margin-left: -30px;"></i>
+                    Completed on
+                </span>
+                            <span class="badge bg-success ml-auto" id="task-completed">
+                            0/0
+                        </span>
+                        </a>
+                </div>
+            </ul>
+            <div class="card-body" id="new-task">
+                <span class="font-weight-semibold">
+                <i class="icon-info22 mr-2"></i>
+                    A new Task is waiting for You!
+                </span>
+                <p class="mt-2" style=" margin-bottom: 0;">
+                <div id="msgText"></div>
+                <a id="msgLink" href="#" target="_blank">Start now.</a>
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="header-elements">
+                    <h6 class="card-title">Latest updates</h6>
+                </div>
+                <ul class="media-list">
+                    <li class="media">
+                        <div class="lds-dual-ring"></div>
+                    </li>
+                    <li class="media" id="no-activities">
+                        <div class="mr-3">
+                            <a href="#"
+                               class="btn bg-transparent border-warning text-warning rounded-round border-2 btn-icon">
+                                <i class="icon-cross"></i>
+                            </a>
+                        </div>
+                        <div class="media-body inactive" style="margin-top: 8px; font-weight: 500;">
+                            No Activities yet
+                        </div>
+                    </li>
+                    <li class="media" id="activities">
+                        <div class="mr-3">
+                            <a href="#"
+                               class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon">
+                                <i class="icon-checkmark3"></i>
+                            </a>
+                        </div>
+                        <div class="media-body active">
+                            You have completed a task for <a id="task-id">&#xA3;</a> on <a href="#" id="task-url"
+                                                                                           target="_blank"> </a>
+                            <div class="text-muted font-size-sm" id="task-date"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /linked list group -->
+</body>
+</html>

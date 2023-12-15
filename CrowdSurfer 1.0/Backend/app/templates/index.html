@@ -1,0 +1,60 @@
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='/css/icomoon.min.css', mimetype='text/css') }}"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css', mimetype='text/css') }}"/>
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='/css/bootstrap_limitless.min.css', mimetype='text/css') }}"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/components.min.css', mimetype='text/css') }}"/>
+<!-- /global stylesheets -->
+
+<!-- Core JS files -->
+<script src="{{ url_for('static', filename='/js/jquery.min.js') }}" type="text/javascript"></script>
+
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script src="{{ url_for('static', filename='/js/spectrum.js') }}"
+        type="text/javascript"></script>
+
+<script src="{{ url_for('static', filename='/js/picker_color.js') }}"
+        type="text/javascript"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/main.css', mimetype='text/css') }}"/>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CrowdSurfer</title>
+</head>
+<body>
+<div class="container-success">
+    <div class="object">
+        <img src="{{ url_for('static', filename='img/logo-128.png') }}" alt=""
+             class="object__img">
+        <div class="object__intro">
+        </div>
+    </div>
+    <div class="arrow">
+        <div class="arrow__body"></div>
+    </div>
+</div>
+<div class="success-items">
+    <div class="card border-1 border-primary info-success">
+        <div class="card-body" style="padding: 15px; text-align: center;">
+            <h5>Welcome to the CrowdSurfer!</h5>
+            You can start right away. Just click here, pin the CrowdSurfer, open it, and log in.
+            <br> <br>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+            <div class="text-muted">Developed by the
+                <a href="https://issd.iism.kit.edu/" target="_blank">
+                Research Group Information Systems I
+                </a>
+                of the Karlsruhe Institute of Technology (KIT).
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "CrowdSurfer",
+  "description": "Seamless Crowdsourcing of Design Feedback. Developed by Karlsruhe Institute of Technology (KIT)",
+  "version": "1.0.0",
+  "icons": {
+    "16": "src/style/images/logo-128.png",
+    "48": "src/style/images/logo-128.png",
+    "128": "src/style/images/logo-128.png"
+  },
+  "action": {
+    "default_title": "CrowdSurfer",
+    "default_popup": "dist/index.html"
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "alarms"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "dist/main.js"
+      ],
+      "matches": [
+        "https://*/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*.html",
+        "*.css",
+        "*.woff",
+        "*.ttf"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
